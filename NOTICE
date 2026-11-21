@@ -1,0 +1,16 @@
+Code, instructions and editable templates: MIT, see LICENSE.
+
+Bundled fonts remain under their own SIL Open Font License 1.1:
+- IBM Plex Sans SC: Copyright 2018 IBM Corp.; Reserved Font Name "Plex".
+  See assets/fonts/OFL-IBM-Plex.txt.
+- Inter: Copyright 2020 The Inter Project Authors.
+  See assets/fonts/OFL-Inter.txt.
+
+The original font files are distributed unmodified. Generated subsets of the
+Chinese font use the new internal family name "Netfeel Sans SC".
+Fonts are not relicensed under MIT.
+
+Playwright, NumPy, fontTools, FFmpeg and browser binaries are installed
+separately and retain their respective licenses. This repository does not
+include private recordings, music tracks, paid templates, credentials or
+third-party video-skill source code.

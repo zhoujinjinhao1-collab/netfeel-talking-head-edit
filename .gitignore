@@ -1,0 +1,16 @@
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!*.example
+output/
+work/
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.zip

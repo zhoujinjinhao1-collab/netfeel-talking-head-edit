@@ -1,0 +1,4 @@
+interface:
+  display_name: "网感口播剪辑"
+  short_description: "真人口播粗剪、分层字效与重点推近，保留原声并交付可编辑工程和MP4"
+  default_prompt: "用 $netfeel-talking-head-edit 按已确认风格剪辑我上传的口播，固定1.1倍速，直接完成整条并另存MP4和可编辑工程。"
