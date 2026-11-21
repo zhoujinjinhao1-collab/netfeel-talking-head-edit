@@ -47,7 +47,7 @@ npm ci
 npx playwright install chromium
 ```
 
-Linux无桌面环境可能还需要系统依赖，参见[Playwright浏览器安装说明](https://playwright.dev/docs/browsers)。渲染器也接受 `CHROME` 环境变量指定浏览器可执行文件。
+Linux无桌面环境可能还需要系统依赖，参见[Playwright浏览器安装说明](https://playwright.dev/docs/browsers)。本项目的Linux自动测试固定使用Ubuntu 24.04，避免`ubuntu-latest`升级带来的浏览器兼容问题；其他发行版请核对Playwright支持情况。渲染器也接受 `CHROME` 环境变量指定已安装浏览器的可执行文件。
 
 使用自定义 `CODEX_HOME` 时，把技能放在该目录的 `skills/netfeel-talking-head-edit` 下。其他支持读取 `SKILL.md`、访问本地文件和执行命令的助手，也可加载本目录使用。
 

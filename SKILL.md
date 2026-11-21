@@ -2,7 +2,7 @@
 name: netfeel-talking-head-edit
 description: 将真人口播剪成网感短视频：去重复与口误、原声倍速、分层字效、语义重点Zoom in、可核实资料画面，并交付MP4与可编辑工程。用户说“网感口播剪辑”“按已确认的网感风格剪”“丰富文字包装、重点推近”或点名此技能时使用；不用于只有文案的虚构真人视频。
 metadata:
-  version: "1.1.0"
+  version: "1.1.1"
   display-name: "网感口播剪辑"
 ---
 
