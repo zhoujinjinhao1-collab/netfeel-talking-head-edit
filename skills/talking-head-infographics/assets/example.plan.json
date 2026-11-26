@@ -1,0 +1,75 @@
+{
+  "example_only": true,
+  "_note": "仅演示布局。按新口播改写文字、字幕、时间码和人物裁切，正式渲染前移除example_only。",
+  "title": "学习方法",
+  "duration": 25,
+  "fps": 30,
+  "width": 1080,
+  "clips": [{"start": 0, "end": 25}],
+  "fonts": {
+    "display": "fonts/SourceHanSerifSC-Heavy.otf",
+    "body": "fonts/SourceHanSansSC-Medium.otf"
+  },
+  "captions": [],
+  "scenes": [
+    {
+      "start": 0, "end": 3, "background": "video", "section": "提出问题",
+      "elements": [
+        {"type": "text", "x": 48, "y": 840, "text": "学得久", "size": 88, "family": "display", "color": "#fffdf7", "at": 0.2},
+        {"type": "text", "x": 50, "y": 963, "text": "就一定学得好？", "size": 52, "family": "display", "color": "$gold", "at": 1.4}
+      ]
+    },
+    {
+      "start": 3, "end": 9, "background": "paper", "section": "01 / 对比",
+      "portrait": {"box": [450, 805, 214, 302]},
+      "elements": [
+        {"type": "text", "x": 50, "y": 165, "text": "投入，与产出", "size": 45, "family": "display"},
+        {"type": "text", "x": 52, "y": 281, "text": "容易注意到的", "size": 21, "color": "$negative"},
+        {"type": "text", "x": 50, "y": 333, "text": "学习时长", "size": 48, "family": "display", "color": "$muted"},
+        {"type": "line", "points": [[52, 426], [669, 426]], "color": "#c9cabe", "stroke": 1},
+        {"type": "text", "x": 52, "y": 473, "text": "更值得关注的", "size": 21, "color": "$accent", "at": 4.5},
+        {"type": "text", "x": 48, "y": 530, "text": "练习质量", "size": 83, "family": "display", "color": "$accent", "at": 4.8},
+        {"type": "line", "points": [[53, 650], [641, 650]], "color": "$gold", "stroke": 6, "at": 5.1},
+        {"type": "text", "x": 53, "y": 855, "text": "只看时长", "size": 26, "color": "$muted"},
+        {"type": "text", "x": 53, "y": 913, "text": "不够", "size": 47, "family": "display", "color": "$negative"}
+      ]
+    },
+    {
+      "start": 9, "end": 15, "background": "paper", "section": "02 / 方法",
+      "portrait": {"box": [244, 782, 232, 321]},
+      "elements": [
+        {"type": "text", "x": 49, "y": 165, "text": "把练习", "size": 60, "family": "display"},
+        {"type": "text", "x": 49, "y": 250, "text": "变得有效", "size": 60, "family": "display", "color": "$accent"},
+        {"type": "rect", "box": [51, 455, 283, 650], "fill": "#eee4df"},
+        {"type": "text", "x": 74, "y": 485, "text": "不是只做", "size": 21, "color": "$negative"},
+        {"type": "text", "x": 73, "y": 540, "text": "重复", "size": 55, "family": "display", "color": "$muted"},
+        {"type": "rect", "box": [334, 426, 668, 677], "fill": "$accent"},
+        {"type": "text", "x": 362, "y": 462, "text": "更要获得", "size": 22, "color": "#c7d4c6"},
+        {"type": "text", "x": 359, "y": 524, "text": "反馈", "size": 84, "family": "display", "color": "#fffdf7"},
+        {"type": "line", "points": [[363, 639], [626, 639]], "color": "$gold", "stroke": 6, "at": 12}
+      ]
+    },
+    {
+      "start": 15, "end": 22, "background": "paper", "section": "03 / 步骤",
+      "portrait": {"box": [450, 805, 214, 302]},
+      "elements": [
+        {"type": "text", "x": 50, "y": 160, "text": "让反馈", "size": 59, "family": "display"},
+        {"type": "text", "x": 50, "y": 245, "text": "进入下一次练习", "size": 50, "family": "display", "color": "$accent"},
+        {"type": "text", "x": 55, "y": 428, "text": "尝试", "size": 50, "family": "display"},
+        {"type": "arrow", "points": [[250, 460], [365, 460]], "at": 16.0},
+        {"type": "text", "x": 420, "y": 428, "text": "复盘", "size": 50, "family": "display", "color": "$accent", "at": 16.4},
+        {"type": "arrow", "points": [[489, 525], [489, 620]], "at": 17.5},
+        {"type": "text", "x": 419, "y": 663, "text": "调整", "size": 50, "family": "display", "color": "$accent", "at": 18.0},
+        {"type": "text", "x": 53, "y": 864, "text": "重点", "size": 25, "color": "$muted"},
+        {"type": "text", "x": 52, "y": 918, "text": "用好反馈", "size": 42, "family": "display", "color": "$accent"}
+      ]
+    },
+    {
+      "start": 22, "end": 25, "background": "video", "section": "回到结论",
+      "elements": [
+        {"type": "text", "x": 50, "y": 850, "text": "不是只求更多", "size": 44, "family": "display", "color": "#fffdf7"},
+        {"type": "text", "x": 48, "y": 942, "text": "而是做得更好", "size": 62, "family": "display", "color": "$gold", "at": 22.6}
+      ]
+    }
+  ]
+}

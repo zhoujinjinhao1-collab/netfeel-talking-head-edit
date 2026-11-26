@@ -98,3 +98,33 @@ python scripts/render.py check 新成片.mp4
 代码、说明和模板为[MIT许可](LICENSE)。字体保留各自的SIL OFL，见[NOTICE](NOTICE)。素材、原声、音乐和事实出处由每次制作单独核查；仓库不附带私人视频、个人口播稿、音乐曲目、付费模板或平台凭据。
 
 用于政策、身份、招生、投资或保险内容时，需要当期官方来源及适用条件。生成成功和技术检测通过不代表事实已经正确，也不代表已经逐秒人工试听。
+
+
+## 新增：口播图解剪辑（独立技能）
+
+仓库还提供 [talking-head-infographics](skills/talking-head-infographics/SKILL.md)，中文名「口播图解剪辑」。适合把口播重点做成动态对照、步骤、公式或证据图：人物缩窗，精致中文字体，主词放大，字幕与口播对齐。默认约25秒样片、原速、9:16、1080×1920、30fps；本次明确参数优先。
+
+它与根目录的「网感口播剪辑」独立，安装时需要复制整个子目录，而不是只复制SKILL.md。用自定义CODEX_HOME时相应调整目标：
+
+~~~powershell
+git clone https://github.com/zhoujinjinhao1-collab/netfeel-talking-head-edit.git
+Copy-Item -LiteralPath .\netfeel-talking-head-edit\skills\talking-head-infographics -Destination "$env:USERPROFILE\.codex\skills\talking-head-infographics" -Recurse
+Set-Location "$env:USERPROFILE\.codex\skills\talking-head-infographics"
+python -m venv .venv
+& .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+~~~
+
+macOS/Linux：克隆后，将skills/talking-head-infographics复制到当前助手的技能目录，再用Python虚拟环境安装该子目录requirements.txt。此技能不需要Node.js或Chromium。FFmpeg可复用系统安装，也可用imageio-ffmpeg随附版本。ASR需要助手已有的本地工具或用户校对稿，不附带语音模型。
+
+字体可按需从Adobe官方仓库下载到本期工程，或指定已授权中文字体。字体下载脚本校验SHA-256并保存OFL许可证，不依赖系统专用字体。
+
+~~~text
+用 $talking-head-infographics 处理我上传的口播，
+先做25秒样片，重点优化文字美观、图解逻辑和排版，
+保留原声，交付MP4。
+~~~
+
+详见[排版规范](skills/talking-head-infographics/references/style.md)及[计划格式与渲染命令](skills/talking-head-infographics/references/project-format.md)。工具交付MP4、SRT和可编辑计划JSON，不冒称剪映/PR原生工程。渲染器按计划工作，语义分镜、转写校对和事实核查仍由使用技能的助手完成。
+
+本子技能不含私人原片、口播稿、成片、凭据或预装模型。测试仅使用合成测试画面；代码沿用MIT许可，下载的字体遵循其各自OFL。
+
