@@ -1,0 +1,4 @@
+interface:
+  display_name: "浅色口播剪辑"
+  short_description: "将口播原片剪成浅色卡片与分步信息图风格的视频，支持字幕和包装精修"
+  default_prompt: "使用 $light-talk-video-edit，把我提供的口播剪成浅色卡片和分步图解风格的视频，先给我可播放的试版。"

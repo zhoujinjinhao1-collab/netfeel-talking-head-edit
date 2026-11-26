@@ -4,6 +4,16 @@
 
 默认 **1.1 倍速、9:16、1080×1920、60fps**，保留原声、音调和台词顺序，加简体中文字幕。每条视频重新安排关键词和推近时机。
 
+## 选择技能
+
+| 技能 | 主要风格 | 入口 |
+|---|---|---|
+| 网感口播剪辑 | 分层字效、语义推近、HTML/JS 工程 | [根目录技能](SKILL.md) |
+| 口播图解剪辑 | 动态对照、步骤、公式和证据图 | [talking-head-infographics](skills/talking-head-infographics/SKILL.md) |
+| 浅色口播剪辑 | 米白与浅绿、圆角卡片、人物小窗、分步信息图 | [light-talk-video-edit](skills/light-talk-video-edit/README.md) · [下载 ZIP](downloads/light-talk-video-edit.zip?raw=true) |
+
+各技能独立安装，参数和交付方式以对应技能为准。
+
 ## 能做什么
 
 - 逐句粗剪：删除重复起句、口误和明显卡顿，保留每句话最完整正确的一遍。
@@ -128,3 +138,24 @@ macOS/Linux：克隆后，将skills/talking-head-infographics复制到当前助�
 
 本子技能不含私人原片、口播稿、成片、凭据或预装模型。测试仅使用合成测试画面；代码沿用MIT许可，下载的字体遵循其各自OFL。
 
+
+## 新增：浅色口播剪辑（独立技能）
+
+[light-talk-video-edit](skills/light-talk-video-edit/README.md) 提供米白底、鼠尾草绿与杏色点缀的浅色包装：浅底深字字幕、白边圆角人物窗、柔和阴影，以及连接节点、叠层主卡和纵向列表等不同图解构图。也适合只保留原剪切和音频、重新设计包装的任务。
+
+![浅色图解版式](skills/light-talk-video-edit/assets/style-reference.jpg)
+
+- [下载独立技能包](downloads/light-talk-video-edit.zip?raw=true)
+- [安装与使用说明](skills/light-talk-video-edit/README.md)
+- [技能指令](skills/light-talk-video-edit/SKILL.md)
+- [技能包 SHA-256](downloads/light-talk-video-edit.zip.sha256)
+
+解压后把完整的 `light-talk-video-edit` 文件夹放进技能目录；脚本依赖 Python、Pillow、NumPy、FFmpeg 和覆盖口播语言的字体，不需要 Node.js 或浏览器。默认快速试剪为 720×1280、25fps，具体参数和限制见使用说明。
+
+~~~text
+用 $light-talk-video-edit 处理我提供的口播，
+采用浅色卡片和分步图解，先给我可播放的试剪。
+保留原声，检查字幕和人物小窗的取景。
+~~~
+
+此技能及独立下载包不含用户口播、私人原片、成片、账号凭据、系统字体或语音模型；设计参考使用本地绘制的抽象内容。代码、文档与示意图沿用仓库 MIT 许可。语音识别、外部配图和配乐按每次制作单独准备。
